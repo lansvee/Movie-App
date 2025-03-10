@@ -1,0 +1,80 @@
+/* src/pages/Login.css */
+
+/* 1) Import Google Fonts (same as Home) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+
+/* 2) Base styles for the page */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #fff; /* White or #f9f9f9 to match site design */
+}
+
+/* The overall container for the login section */
+.login-container {
+  padding: 2rem 1rem;
+  background-color: #ffffff; /* White, similar to Home page background */
+}
+
+/* The card-like box around the login form */
+.login-card {
+  background: #fff;
+  border: 1px solid #eb1c24; /* Red border to match brand color */
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Login title with Playfair Display in red */
+.login-title {
+  font-family: 'Playfair Display', serif;
+  color: #eb1c24;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* Label styles to match brand color and bigger text */
+.form-label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #eb1c24;
+}
+
+/* Input fields with slightly bigger text, extra padding */
+.form-control {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+/* The black or red button to match the brand styling – here we use red for consistency */
+.login-btn {
+  background-color: #eb1c24;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.login-btn:hover {
+  background-color: #c6181c; /* Darker red on hover */
+}
+
+/* Adjust on very small screens (<576px) */
+@media (max-width: 576px) {
+  .login-title {
+    font-size: 1.8rem;
+  }
+  .form-control {
+    font-size: 0.95rem;
+  }
+}

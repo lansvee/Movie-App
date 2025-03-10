@@ -1,0 +1,79 @@
+/* src/pages/Register.css */
+
+/* 1. Import fonts (Bebas Neue & Open Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
+
+/* 2. Base styles */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* Increase base font size if desired */
+}
+
+/* Container for the main register area (white background to match nav) */
+.register-container {
+  background-color: #ffffff; /* White, matching your app's design */
+  padding: 2rem 1rem; 
+}
+
+/* Card-like box for the form, with a red border to match nav color */
+.register-card {
+  background: #fff;
+  border: 1px solid #eb1c24; /* Red border */
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Register heading with Bebas Neue, red text */
+.register-title {
+  font-family: "Bebas Neue", sans-serif;
+  color: #eb1c24; 
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Labels: red color, slightly bigger and bolder */
+.form-label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #eb1c24;
+}
+
+/* Inputs: standard styling, black text */
+.form-control {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  color: #333;
+}
+
+/* Red button, consistent with nav brand color */
+.register-btn {
+  background-color: #eb1c24;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.register-btn:hover {
+  background-color: #c6181c;
+}
+
+/* Adjust on very small screens (<576px) */
+@media (max-width: 576px) {
+  .register-title {
+    font-size: 2rem;
+  }
+  .form-control {
+    font-size: 0.95rem;
+  }
+}
